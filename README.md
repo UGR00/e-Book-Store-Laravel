@@ -58,11 +58,11 @@ Kitap alım-satımı için Laravel tabanlı bir uygulama. Bu proje, kullanıcıl
 
 <h3>Ana Sayfa 2</h3>
 
-<img src='screenshots/MainPage2.png'>
+<img src='screenshots/Mainpage2.png'>
 
 <h3>Ana Sayfa 3</h3>
 
-<img src='screenshots/MainPage3.png'>
+<img src='screenshots/Mainpage3.png'>
 
 <h3>Kayıt Ol</h3>
 
