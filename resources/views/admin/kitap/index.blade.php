@@ -24,7 +24,7 @@
                                     <td>{{$value['name']}}</td>
                                     <td><a href="{{route('admin.kitap.edit',['id'=>$value['id']])}}">Duzenle</a></td>
                                     <td><a href="{{route('admin.kitap.delete',['id'=>$value['id']])}}">Sil</a></td>
-                                    <td class="text-primary">$36,738</td>
+                                
                                 </tr>
                                 @endforeach                           
                             </tbody>

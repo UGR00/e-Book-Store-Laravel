@@ -20,7 +20,7 @@ class indexController extends Controller
     }
     public function store(Request $request)
     {
-        $all['image']=imageUpload::singleUpload(rand(1,9000),"yazar",$request->file('image'));
+        $all['image']=imageUpload::singleUpload(rand(1,9000),"slider",$request->file('image'));
         if($all['image']!=""){
        $insert=Slider::create($all);
        if($insert)
@@ -46,7 +46,7 @@ class indexController extends Controller
     public function update(Request $request)
     {
       $id=$request->route('id');
-        $all['image']=imageUpload::singleUploadUpdate(rand(1,9000),"yazar",$request->file('image'),$data,"image");
+        $all['image']=imageUpload::singleUploadUpdate(rand(1,9000),"slider",$request->file('image'),$data,"image");
         if($all['image']!=""){
        $insert=Slider::where('id','=',$id)->update($all);
        if($insert)

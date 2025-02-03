@@ -18,7 +18,7 @@
 		<div class="container">
 			<div class="contact-top heading">
 				<h2>BİLGİLERİ DOLDURUNUZ</h2>
-			</div>contact
+			</div>
 			@if(session("status"))
 			{{session("status")}}
 			@endif

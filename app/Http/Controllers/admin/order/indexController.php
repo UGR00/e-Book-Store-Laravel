@@ -27,4 +27,15 @@ class indexController extends Controller
          return redirect('/');
       }
      }
+
+     public function delete($id)
+     {
+    $c = Order::where('id', '=', $id)->count();
+    if ($c != 0) {
+        Order::where('id', '=', $id)->delete();
+        return redirect()->back();
+    } else {
+        return redirect('/');
+    }
+}
 }

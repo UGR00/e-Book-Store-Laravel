@@ -10,7 +10,6 @@ use App\Helper\sepetHelper;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Order;
 
-
 class indexController extends Controller
 {
     public function index()
@@ -68,7 +67,7 @@ class indexController extends Controller
         $insert=Order::create($array);
         if( $insert)
         {
-            Session::forget('basket');
+            
          return redirect()->back()->with('status','Siparişiniz Alındı');
         }
         else

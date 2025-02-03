@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('selflink');
             $table->string('image');
-            $table->string('bio')->nullable();
+            $table->text('bio')->nullable();
             $table->timestamps();
         });
     }
